@@ -1,23 +1,14 @@
-import logo from './logo.svg';
+import ContactCard from './ContactCard'
+import React, { Component } from 'react'
 import './App.css';
 
-function App() {
+
+function App(){
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div>
+    <ContactCard name="Samantha" phone="123-456-7890" email="samantha@gmail.com"/><br/>
+    <ContactCard name="Jasmine" phone="111-222-3333" email="Jasmine@hotmail.com"/><br />
+    <ContactCard name="Robert" phone="333-444-2345" email="robert@something.com"/><br />
     </div>
   );
 }
